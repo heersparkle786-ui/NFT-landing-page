@@ -1,140 +1,847 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* main body */
 body {
-  margin: 0;
-  width: 1440px;
-  height: 6004px;
-  background: #0D0B0C;
-  position: relative;
-  overflow-x: hidden;
+    background-color: #0D0B0C;
+    width: 1440px;
+    height: 6004px;
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Clash Display', sans-serif;
 }
 
-/* gradients base */
-.ellipse {
-  position: absolute;
-  background: linear-gradient(152.64deg, #DD24E1 0%, #5117F4 100%);
-  filter: blur(130px);
+/* Background Gradients */
+.gradient {
+    position: absolute;
+    border-radius: 50%;
 }
 
-/* Ellipse 429 */
-.ellipse-429 {
-  width: 654px;
-  height: 820px;
-  left: 718px;
-  top: 127px;
+.ellipse-431-1 {
+    width: 654px;
+    height: 981px;
+    left: 21px;
+    top: 4933px;
+    background: linear-gradient(152.64deg, #DD24E1 0%, #5117F4 100%);
+    filter: blur(130px);
 }
 
-/* Ellipse 433 */
+.ellipse-434 {
+    width: 1159px;
+    height: 995px;
+    left: 735px;
+    top: 5726px;
+    background: linear-gradient(152.64deg, #DD24E1 0%, #5117F4 100%);
+}
+
+.ellipse-431-2 {
+    width: 534px;
+    height: 654px;
+    left: 980px;
+    top: 3737px;
+    background: linear-gradient(152.64deg, #DD24E1 0%, #5117F4 100%);
+    opacity: 0.75;
+    filter: blur(130px);
+}
+
 .ellipse-433 {
-  width: 654px;
-  height: 1011px;
-  left: 994px;
-  top: 2209px;
-  opacity: 0.75;
+    width: 654px;
+    height: 1011px;
+    left: 994px;
+    top: 2209px;
+    background: linear-gradient(152.64deg, #DD24E1 0%, #5117F4 100%);
+    opacity: 0.75;
+    filter: blur(130px);
 }
 
-/* Ellipse 432 */
 .ellipse-432 {
-  width: 886px;
-  height: 1321px;
-  left: -228px;
-  top: 2762px;
-  opacity: 0.75;
+    width: 886px;
+    height: 1321px;
+    left: -228px;
+    top: 2762px;
+    background: linear-gradient(152.64deg, #DD24E1 0%, #5117F4 100%);
+    opacity: 0.75;
+    filter: blur(130px);
 }
 
-/* Ellipse 431 */
-.ellipse-431 {
-  width: 534px;
-  height: 654px;
-  left: 980px;
-  top: 3737px;
-  opacity: 0.75;
+.ellipse-429 {
+    width: 654px;
+    height: 820px;
+    left: 718px;
+    top: 127px;
+    background: linear-gradient(152.64deg, #DD24E1 0%, #5117F4 100%);
+    filter: blur(130px);
 }
 
-/* Navbar */
-.navbar {
-  position: absolute;
-  top: 45px;
-  left: 120px;
-  width: 1200px;
-  height: 48px;
+.ellipse-244 {
+    position: absolute;
+    visibility: hidden;
+    width: 870px;
+    height: 870px;
+    left: 912px;
+    top: 9602px;
+    background: linear-gradient(158.76deg, rgba(21, 234, 182, 0.4) 15.51%, rgba(137, 32, 243, 0.24) 32.79%, rgba(137, 32, 243, 0) 51.87%, rgba(137, 32, 243, 0.24) 71.3%, rgba(21, 234, 182, 0.4) 84.62%);
+    opacity: 0.1;
 }
 
-/* Logo */
-.logo {
-  position: absolute;
-  width: 36px;
-  height: 30.57px;
-  left: 0;
-  top: -0.45px;
-  background: #FFFFFF;
+.rectangle-45 {
+    position: absolute;
+    width: 655.78px;
+    height: 511.77px;
+    left: 52px;
+    top: 19px;
+    background: rgba(202, 34, 227, 0.22);
+    filter: blur(225px);
+    transform: rotate(-0.25deg);
 }
 
-/* Nav links */
-.nav-links {
-  position: absolute;
-  right: 342px;
-  top: 15px;
-  display: flex;
-  gap: 50px;
+.ellipse-430 {
+    width: 654px;
+    height: 820px;
+    left: 116px;
+    top: 1164px;
+    background: linear-gradient(152.64deg, #DD24E1 0%, #5117F4 100%);
+    filter: blur(130px);
 }
 
-.nav-links a {
-  font-family: 'Clash Display';
-  font-weight: 500;
-  font-size: 16px;
-  color: #FFFFFF;
-  text-decoration: none;
+.line-13 {
+    position: absolute;
+    width: 68px;
+    height: 0px;
+    left: 625px;
+    top: 6806px;
 }
 
-/* Nav button */
+/* Header/Navigation */
+.union {
+    position: absolute;
+    width: 36px;
+    height: 30.57px;
+    left: 120px;
+    top: 44.55px;
+    background: #FFFFFF;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+    position: absolute;
+    width: 269px;
+    height: 18px;
+    right: 342px;
+    top: 60px;
+}
+
+.nav-link {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+.about-us {
+    width: 70px;
+    height: 18px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.store {
+    width: 44px;
+    height: 18px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.games {
+    width: 55px;
+    height: 18px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
 .nav-btn {
-  position: absolute;
-  width: 172px;
-  height: 48px;
-  right: 0;
-  top: 0;
-  background: #FFFFFF;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: absolute;
+    width: 172px;
+    height: 48px;
+    left: 1148px;
+    top: 45px;
 }
 
-.nav-btn span {
-  font-family: 'Clash Display';
-  font-weight: 600;
-  font-size: 16px;
-  color: #000000;
+.nav-btn-bg {
+    position: absolute;
+    width: 172px;
+    height: 48px;
+    left: 1148px;
+    top: 45px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-/* Hero section */
-.hero h1 {
-  position: absolute;
-  width: 588px;
-  left: 120px;
-  top: 220px;
-
-  font-family: 'Clash Display';
-  font-weight: 600;
-  font-size: 72px;
-  line-height: 125%;
-  text-transform: capitalize;
-  color: #FFFFFF;
+.lets-connect {
+    position: absolute;
+    width: 124px;
+    height: 18px;
+    right: 144px;
+    top: 60px;
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #000000;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-.hero p {
-  position: absolute;
-  width: 379px;
-  left: 120px;
-  top: 510px;
-
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-  letter-spacing: 0.016em;
-  color: #FFFFFF;
-  opacity: 0.8;
+/* Hero Section */
+.hero-text {
+    position: absolute;
+    left: 120px;
+    top: 220px;
 }
+
+.hero-text h1 {
+    width: 588px;
+    height: 270px;
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 125%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.hero-subtitle {
+    position: absolute;
+    width: 379px;
+    height: 27px;
+    left: 120px;
+    top: 510px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.016em;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.btn {
+    position: absolute;
+    width: 224px;
+    height: 59px;
+    left: 120px;
+    top: 593px;
+}
+
+.btn-bg {
+    position: absolute;
+    width: 224px;
+    height: 59px;
+    left: 120px;
+    top: 593px;
+    background: linear-gradient(152.64deg, #DD24E1 0%, #5117F4 100%);
+    border-radius: 10px;
+}
+
+.btn-text {
+    position: absolute;
+    width: 96px;
+    height: 25px;
+    left: 174px;
+    top: 610px;
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero Image 1 */
+.hero-image-wrapper {
+    position: absolute;
+    width: 545.03px;
+    height: 653px;
+    left: 775px;
+    top: 198px;
+}
+
+.hero-img-1 {
+    position: absolute;
+    width: 376.93px;
+    height: 566.25px;
+    left: 775px;
+    top: 206.49px;
+    transform: rotate(-15deg);
+}
+
+.rectangle-22731 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 376.93px;
+    height: 147.72px;
+    left: 883.32px;
+    top: 610.76px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.2) 100%);
+    backdrop-filter: blur(25px);
+    transform: rotate(-15deg);
+}
+
+.img {
+    box-sizing: border-box;
+    position: absolute;
+    border: 2.54684px solid #FFFFFF;
+    background: #D9D9D9;
+}
+
+.img-1 {
+    width: 376.93px;
+    height: 418.53px;
+    left: 775px;
+    top: 206.49px;
+    transform: rotate(-15deg);
+}
+
+.current-bid {
+    position: absolute;
+    width: 68px;
+    height: 17px;
+    left: 929.46px;
+    top: 764.49px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.8853px;
+    line-height: 17px;
+    color: #FFFFFF;
+    transform: rotate(-15deg);
+}
+
+.remaining-time {
+    position: absolute;
+    width: 98px;
+    height: 17px;
+    left: 1082.94px;
+    top: 650.56px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.8853px;
+    line-height: 17px;
+    color: #FFFFFF;
+    transform: rotate(-15deg);
+}
+
+.eth-value {
+    position: absolute;
+    width: 57px;
+    height: 17px;
+    left: 956.05px;
+    top: 787.45px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: #FFFFFF;
+    transform: rotate(-15deg);
+}
+
+.time-value {
+    position: absolute;
+    width: 106px;
+    height: 17px;
+    left: 1089.75px;
+    top: 673.91px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.281px;
+    line-height: 17px;
+    color: #FFFFFF;
+    transform: rotate(-15deg);
+}
+
+.ethereum-icon {
+    position: absolute;
+    width: 11.99px;
+    height: 19.53px;
+    left: 935.83px;
+    top: 802.76px;
+    transform: rotate(-15deg);
+    background: #343434;
+}
+
+.img-btn {
+    position: absolute;
+    width: 155.36px;
+    height: 40.75px;
+    left: 1095.16px;
+    top: 700.99px;
+    transform: rotate(-15deg);
+}
+
+.rectangle-333 {
+    position: absolute;
+    width: 155.36px;
+    height: 40.75px;
+    left: 1095.16px;
+    top: 700.99px;
+    background: #FFFFFF;
+    border-radius: 2.39703px;
+    transform: matrix(-0.97, 0.26, 0.26, 0.97, 0, 0);
+}
+
+.lets-connect-img {
+    position: absolute;
+    width: 84px;
+    height: 14px;
+    right: 222.07px;
+    top: 723.13px;
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13.5832px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.119851px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transform: rotate(-15deg);
+}
+
+.artist-name {
+    position: absolute;
+    width: 33px;
+    height: 17px;
+    left: 957.98px;
+    top: 702.33px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11.3193px;
+    line-height: 17px;
+    color: #FFFFFF;
+    transform: rotate(-15deg);
+}
+
+.artist-bid {
+    position: absolute;
+    width: 54px;
+    height: 17px;
+    left: 963.11px;
+    top: 716.03px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.3193px;
+    line-height: 17px;
+    color: #D7D7D7;
+    transform: rotate(-15deg);
+}
+
+.ellipse-artist {
+    position: absolute;
+    width: 37.5px;
+    height: 37.5px;
+    left: 913.2px;
+    top: 711.7px;
+    background: #D9D9D9;
+    border-radius: 50%;
+    transform: rotate(-15deg);
+}
+
+/* Hero Image 2 */
+.hero-img-2 {
+    position: absolute;
+    width: 376.93px;
+    height: 566.25px;
+    left: 943.09px;
+    top: 198px;
+}
+
+.rectangle-22731-2 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 376.93px;
+    height: 147.72px;
+    left: 943.09px;
+    top: 616.53px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.2) 100%);
+    backdrop-filter: blur(25px);
+}
+
+.img-2 {
+    width: 376.93px;
+    height: 418.53px;
+    left: 943.09px;
+    top: 198px;
+}
+
+.current-bid-2 {
+    position: absolute;
+    width: 68px;
+    height: 17px;
+    left: 968.56px;
+    top: 699.73px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.8853px;
+    line-height: 17px;
+    color: #EEEEEE;
+}
+
+.remaining-time-2 {
+    position: absolute;
+    width: 98px;
+    height: 17px;
+    left: 1144.29px;
+    top: 636.91px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.8853px;
+    line-height: 17px;
+    color: #EEEEEE;
+}
+
+.eth-value-2 {
+    position: absolute;
+    width: 57px;
+    height: 17px;
+    left: 989.04px;
+    top: 726.05px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.time-value-2 {
+    position: absolute;
+    width: 112px;
+    height: 17px;
+    left: 1144.29px;
+    top: 663.22px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.ethereum-icon-2 {
+    position: absolute;
+    width: 11.99px;
+    height: 19.53px;
+    left: 968.56px;
+    top: 724.35px;
+    background: #343434;
+}
+
+.img-btn-2 {
+    position: absolute;
+    width: 155.36px;
+    height: 40.75px;
+    left: 1139.2px;
+    top: 703.12px;
+}
+
+.rectangle-333-2 {
+    position: absolute;
+    width: 155.36px;
+    height: 40.75px;
+    left: 1139.2px;
+    top: 703.12px;
+    background: #FFFFFF;
+    border-radius: 2.39703px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.lets-connect-img-2 {
+    position: absolute;
+    width: 84px;
+    height: 14px;
+    right: 180.3px;
+    top: 716.71px;
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13.5832px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.119851px;
+    text-transform: uppercase;
+    color: #000000;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.artist-name-2 {
+    position: absolute;
+    width: 33px;
+    height: 17px;
+    left: 1014.55px;
+    top: 638.32px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11.3193px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.artist-bid-2 {
+    position: absolute;
+    width: 54px;
+    height: 17px;
+    left: 1014.55px;
+    top: 658.13px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.3193px;
+    line-height: 17px;
+    color: #EEEEEE;
+}
+
+.ellipse-426 {
+    position: absolute;
+    width: 37.5px;
+    height: 37.5px;
+    left: 968.56px;
+    top: 636.91px;
+    background: #D9D9D9;
+    border-radius: 50%;
+}
+
+/* Stats Section */
+.stats {
+    position: absolute;
+    left: 120px;
+    top: 812px;
+}
+
+.stat-1, .stat-2, .stat-3 {
+    position: absolute;
+}
+
+.stat-1 {
+    width: 118px;
+    height: 73px;
+    left: 120px;
+    top: 812px;
+}
+
+.stat-2 {
+    width: 120px;
+    height: 73px;
+    left: 318px;
+    top: 812px;
+}
+
+.stat-3 {
+    width: 107px;
+    height: 73px;
+    left: 518px;
+    top: 812px;
+}
+
+.stat-1 h3, .stat-2 h3, .stat-3 h3 {
+    position: absolute;
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.stat-1 h3 {
+    width: 118px;
+    height: 48px;
+    left: 120px;
+    top: 812px;
+}
+
+.stat-2 h3 {
+    width: 120px;
+    height: 48px;
+    left: 318px;
+    top: 812px;
+}
+
+.stat-3 h3 {
+    width: 107px;
+    height: 48px;
+    left: 518px;
+    top: 812px;
+}
+
+.stat-1 p, .stat-2 p, .stat-3 p {
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.stat-1 p {
+    width: 62px;
+    height: 20px;
+    left: 120px;
+    top: 865px;
+}
+
+.stat-2 p {
+    width: 71px;
+    height: 20px;
+    left: 318px;
+    top: 865px;
+}
+
+.stat-3 p {
+    width: 51px;
+    height: 20px;
+    left: 518px;
+    top: 865px;
+}
+
+/* Featured NFT Section */
+.featured-nft {
+    position: relative;
+}
+
+.featured-image {
+    position: absolute;
+    width: 596px;
+    height: 646px;
+    left: 121px;
+    top: 1234px;
+}
+
+.rectangle-22748 {
+    position: absolute;
+    width: 596px;
+    height: 646px;
+    left: 121px;
+    top: 1234px;
+    background: #D9D9D9;
+    border-radius: 20px;
+}
+
+.featured-content {
+    position: absolute;
+    left: 825px;
+    top: 1305px;
+}
+
+.featured-content h2 {
+    width: 335px;
+    height: 180px;
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 125%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.created-by {
+    position: absolute;
+    width: 230px;
+    height: 20px;
+    left: 825px;
+    top: 1505px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #CCCCCC;
+    margin: 0;
+}
+
+.value-info {
+    position: absolute;
+    width: 144px;
+    height: 98px;
+    left: 824px;
+    top: 1601px;
+}
+
+.current-bid-label {
+    position: absolute;
+    width: 93px;
+    height: 20px;
+    left: 825px;
+    top: 1601px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font
