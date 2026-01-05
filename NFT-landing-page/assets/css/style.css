@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+/* main body */
+body {
+  margin: 0;
+  width: 1440px;
+  height: 6004px;
+  background: #0D0B0C;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* gradients base */
+.ellipse {
+  position: absolute;
+  background: linear-gradient(152.64deg, #DD24E1 0%, #5117F4 100%);
+  filter: blur(130px);
+}
+
+/* Ellipse 429 */
+.ellipse-429 {
+  width: 654px;
+  height: 820px;
+  left: 718px;
+  top: 127px;
+}
+
+/* Ellipse 433 */
+.ellipse-433 {
+  width: 654px;
+  height: 1011px;
+  left: 994px;
+  top: 2209px;
+  opacity: 0.75;
+}
+
+/* Ellipse 432 */
+.ellipse-432 {
+  width: 886px;
+  height: 1321px;
+  left: -228px;
+  top: 2762px;
+  opacity: 0.75;
+}
+
+/* Ellipse 431 */
+.ellipse-431 {
+  width: 534px;
+  height: 654px;
+  left: 980px;
+  top: 3737px;
+  opacity: 0.75;
+}
+
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 45px;
+  left: 120px;
+  width: 1200px;
+  height: 48px;
+}
+
+/* Logo */
+.logo {
+  position: absolute;
+  width: 36px;
+  height: 30.57px;
+  left: 0;
+  top: -0.45px;
+  background: #FFFFFF;
+}
+
+/* Nav links */
+.nav-links {
+  position: absolute;
+  right: 342px;
+  top: 15px;
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links a {
+  font-family: 'Clash Display';
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* Nav button */
+.nav-btn {
+  position: absolute;
+  width: 172px;
+  height: 48px;
+  right: 0;
+  top: 0;
+  background: #FFFFFF;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn span {
+  font-family: 'Clash Display';
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+}
+
+/* Hero section */
+.hero h1 {
+  position: absolute;
+  width: 588px;
+  left: 120px;
+  top: 220px;
+
+  font-family: 'Clash Display';
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 125%;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.hero p {
+  position: absolute;
+  width: 379px;
+  left: 120px;
+  top: 510px;
+
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.016em;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
