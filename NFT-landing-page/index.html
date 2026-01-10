@@ -6,210 +6,240 @@
     <title>NFTme - Digital Art Marketplace</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+ 
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">NFTme</div>
-                <div class="nav-links">
-                    <a href="#">Explore</a>
-                    <a href="#">Marketplace</a>
-                    <a href="#">Artists</a>
-                    <button class="btn-primary">
-                        <i class="fas fa-wallet"></i>
-                        Connect
-                    </button>
-                </div>
-            </nav>
+
+<section class="hero-exact">
+    <header class="hero-header">
+        <div class="union-logo">
+            <img src="assets/images/Union.png" alt="Union Logo">
         </div>
+
+        <nav class="hero-nav">
+            <a href="#">About us</a>
+            <a href="#">Store</a>
+            <a href="#">Games</a>
+            <button class="wallet-btn">Connect Wallet</button>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1>Discover Rare Collections Of Art & NFT's</h1>
-                <p>Create, Explore, & Collect Digital Art NFTs</p>
-                <button class="btn-primary">
-                    EXPLORE
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-                
-                <div class="stats-container">
-                    <div class="stat-item">
-                        <span class="stat-number">32k+</span>
-                        <span class="stat-label">Artwork</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">20k+</span>
-                        <span class="stat-label">Auctions</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">10k+</span>
-                        <span class="stat-label">Artists</span>
-                    </div>
+    <!-- HERO ROW -->
+    <div class="container hero-grid">
+
+        <!-- LEFT CONTENT -->
+        <div class="hero-left">
+            <h1>
+                Discover Rare<br>
+                Collections Of<br>
+                Art & NFT’s
+            </h1>
+
+            <p>Create, Explore, & Collect Digital Art NFTs</p>
+
+            <button class="hero-btn">EXPLORE</button>
+
+            <div class="hero-stats">
+                <div>
+                    <h3>32k+</h3>
+                    <span>Artwork</span>
+                </div>
+                <div>
+                    <h3>20k+</h3>
+                    <span>Auctions</span>
+                </div>
+                <div>
+                    <h3>10k+</h3>
+                    <span>Artists</span>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Featured NFT Section -->
-    <section class="featured-section">
-        <div class="container">
-            <h2>Bitcoin Art Work</h2>
-            
-            <div class="nft-grid">
-                <!-- First NFT Card -->
-                <div class="nft-card">
-                    <div class="nft-image-container">
-                        <div class="image-placeholder">
-                            <i class="fas fa-image"></i>
-                            <span>Your Image Here</span>
-                        </div>
+        <!-- RIGHT IMAGE STACK -->
+        <div class="hero-images">
+            <div class="hero-glow"></div>
+
+            <img src="assets/images/hero1.png" class="nft nft-back">
+            <img src="assets/images/hero2.png" class="nft nft-front">
+
+            <!-- GLASS CARD -->
+            <div class="glass-card">
+                <div class="glass-top">
+                    <div>
+                        <strong>Laura</strong>
+                        <span>0.21 Worth</span>
                     </div>
-                    <div class="nft-content">
-                        <div class="nft-header">
-                            <div>
-                                <h3 class="nft-title">Bar Mark</h3>
-                                <p class="nft-creator">Name: Bar Mark</p>
-                            </div>
-                            <div class="nft-price">
-                                <div class="detail-value">2.8 ETH</div>
-                                <div class="detail-label">Owner: 04</div>
-                            </div>
-                        </div>
-                        
-                        <div class="nft-details">
-                            <div class="detail-item">
-                                <div class="detail-value">16</div>
-                                <div class="detail-label">Hours</div>
-                            </div>
-                            <div class="detail-item">
-                                <div class="detail-value">57</div>
-                                <div class="detail-label">Minutes</div>
-                            </div>
-                            <div class="detail-item">
-                                <div class="detail-value">14</div>
-                                <div class="detail-label">Seconds</div>
-                            </div>
-                        </div>
-                        
-                        <button class="btn-primary full-width">
-                            PLACE BID
-                        </button>
+                    <div>
+                        <span>Remaining Time</span>
+                        <strong>18h : 57m : 14s</strong>
                     </div>
                 </div>
-                
-                <!-- Second NFT Card -->
-                <div class="nft-card">
-                    <div class="nft-image-container">
-                        <div class="image-placeholder">
-                            <i class="fab fa-bitcoin"></i>
-                            <span> <img src="assets/images/bitcoin.png"></span>
-                        </div>
+
+                <div class="glass-bottom">
+                    <div>
+                        <span>Current Bid</span>
+                        <strong>2.8 ETH</strong>
                     </div>
-                    <div class="nft-content">
-                        <div class="nft-header">
-                            <div>
-                                <h3 class="nft-title">Bitcoin Art Work</h3>
-                                <p class="nft-creator">Created by Jonathan Barba</p>
-                            </div>
-                        </div>
-                        
-                        <div class="nft-details">
-                            <div class="detail-item">
-                                <div class="detail-value">1.09 ETH</div>
-                                <div class="detail-label">Current Bid</div>
-                                <div class="detail-label">$1,835</div>
-                            </div>
-                            <div class="detail-item">
-                                <div class="detail-value">18</div>
-                                <div class="detail-label">Hours</div>
-                            </div>
-                            <div class="detail-item">
-                                <div class="detail-value">57</div>
-                                <div class="detail-label">Minutes</div>
-                            </div>
-                        </div>
-                        
-                        <button class="btn-secondary full-width">
-                            VIEW ART WORK
-                        </button>
-                    </div>
+                    <button>PLACE A BID</button>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Trending Section -->
-    <section class="trending-section">
-        <div class="container">
-            <h2>Trending This Week</h2>
-            <p class="section-subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </div>
+</section>
+
+</body>
+
+
+   <section class="bitcoin-featured">
+    <div class="container bitcoin-grid">
+
+        <!-- LEFT IMAGE -->
+        <div class="bitcoin-image">
+            <img src="./assets/images/bitcoin.png" alt="Bitcoin Art">
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="bitcoin-content">
+            <h2>Bitcoin<br>Art Work</h2>
+
+            <p class="creator">
+                Created by <span>Jonathan Barba</span>
             </p>
-            
-            <div class="artists-grid">
-                <!-- Artist 1 -->
-                <div class="artist-card">
-                    <div class="artist-avatar">S</div>
-                    <h3 class="artist-name">Sebastian</h3>
-                    <p class="artist-art">Golden Flower</p>
-                    <div class="artist-price">2.3 ETH</div>
+
+            <div class="bitcoin-info">
+                <div class="bid">
+                    <span class="label">Current Bid</span>
+                    <h3>1.09 ETH</h3>
+                    <p>$1,835</p>
                 </div>
-                
-                <!-- Artist 2 -->
-                <div class="artist-card">
-                    <div class="artist-avatar">J</div>
-                    <h3 class="artist-name">Javier Miranda</h3>
-                    <p class="artist-art">Bernard Hose</p>
-                    <div class="artist-price">2.4 ETH</div>
-                </div>
-                
-                <!-- Artist 3 -->
-                <div class="artist-card">
-                    <div class="artist-avatar">M</div>
-                    <h3 class="artist-name">Milad Fakurian</h3>
-                    <p class="artist-art">Milad Fakurian</p>
-                    <div class="artist-price">2.3 ETH</div>
-                </div>
-                
-                <!-- Artist 4 -->
-                <div class="artist-card">
-                    <div class="artist-avatar">F</div>
-                    <h3 class="artist-name">Ferhat Deniz</h3>
-                    <p class="artist-art">Kalita Pujar</p>
-                    <div class="artist-price">2.2 ETH</div>
-                </div>
-                
-                <!-- Artist 5 -->
-                <div class="artist-card">
-                    <div class="artist-avatar">P</div>
-                    <h3 class="artist-name">Polina Kondrashova</h3>
-                    <p class="artist-art">Joshua Ripam</p>
-                    <div class="artist-price">2.2 ETH</div>
-                </div>
-                
-                <!-- Artist 6 -->
-                <div class="artist-card">
-                    <div class="artist-avatar">E</div>
-                    <h3 class="artist-name">Erick Butler</h3>
-                    <p class="artist-art">Golden Flower</p>
-                    <div class="artist-price">2.3 ETH</div>
+
+                <div class="divider"></div>
+
+                <div class="auction">
+                    <span class="label">Auction Ends In</span>
+                    <div class="time">
+                        <div>
+                            <h4>18</h4>
+                            <span>Hours</span>
+                        </div>
+                        <div>
+                            <h4>57</h4>
+                            <span>Minutes</span>
+                        </div>
+                        <div>
+                            <h4>14</h4>
+                            <span>Seconds</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <div class="explore-more">
-                <button class="btn-secondary">
-                    Explore More
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-            </div>
+
+            <button class="view-btn">
+                View Art Work <i class="fas fa-arrow-right"></i>
+            </button>
         </div>
-    </section>
+
+    </div>
+</section>
+
+
+   <section class="trending-ref">
+    <div class="container">
+        <h2>Trending This Week</h2>
+        <p class="section-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+        </p>
+    
+        <div class="trending-masonry">
+
+            <div class="trend-item">
+                <div class="trend-text">
+                    <div>
+                        <h4>Sebastian</h4>
+                        <span>Golden Flower</span>
+                    </div>
+                   
+            </div>
+                <img src="assets/images/trending1.png">
+            </div>
+                
+
+            <div class="trend-item">
+
+                 <div class="trend-text">
+                    <div>
+                        <h4>Ferhat Deniz</h4>
+                        <span>Golden Flower</span>
+                    </div>
+                   
+                </div>
+                <img src="assets/images/trending2.png">
+               
+            </div>
+
+            <div class="trend-item">
+
+                <div class="trend-text">
+                    <div>
+                        <h4>Javier Miranda</h4>
+                        <span>Golden Flower</span>
+                    </div>
+                    
+                </div>
+                <img src="assets/images/trending3.png">
+                
+            </div>
+
+            <div class="trend-item">
+                <div class="trend-text">
+                    <div>
+                        <h4>Polina Kondrashova</h4>
+                        <span>Golden Flower</span>
+                    </div>
+                    
+                </div>
+                <img src="assets/images/trending4.png">
+                
+            </div>
+
+            <div class="trend-item">
+
+                <div class="trend-text">
+                    <div>
+                        <h4>Milad Fakurian</h4>
+                        <span>Golden Flower</span>
+                    </div>
+                    
+                </div>
+                <img src="assets/images/trending5.png">
+                
+            </div>
+
+            <div class="trend-item">
+
+                <div class="trend-text">
+                    <div>
+                        <h4>Erick Butler</h4>
+                        <span>Golden Flower</span>
+                    </div>
+                    
+                </div>
+                <img src="assets/images/trending6.png">
+                
+            </div>
+
+        </div>
+
+        <div class="explore-more">
+            <button class="btn-secondary">
+                Explore More <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+
 
     <section class="popular-artists-new">
     <div class="container">
@@ -278,7 +308,6 @@
             <li><a href="#">Artists</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-
         <div class="footer-social">
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -295,9 +324,7 @@
         </p>
     </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
-
