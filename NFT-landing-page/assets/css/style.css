@@ -585,3 +585,11 @@ header {
         gap: 15px;
     }
 }
+
+.ellipse-11 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
